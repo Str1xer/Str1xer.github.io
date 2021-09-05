@@ -30,12 +30,15 @@
 					</a>
 			</div>
 		</div>
-		<div id="button_box">
+		<!-- <div id="button_box">
 			<a id="open" href=""><img src="./Present1.svg" class="Present"></img></a>
+		</div> -->
+		<div id="new_btn">
+			<div id="new_btn2"></div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-	<script>
+	<!-- <script>
  	var daysInWeek = 1;
 	$(document).ready(function(){
 		$('#open').click(function(){
@@ -49,6 +52,40 @@
 				}
 				else{
 					$('.Present').attr('src', './Present3.svg')
+				}
+				daysInWeek++;
+			}
+			return false;
+		});				
+	});
+	</script> -->
+	<script>
+ 	var daysInWeek = 1;
+ 	var id = Math.floor(Math.random() * 3);
+	if (id == 1){
+		$('#image').attr('src','./chm2.jpg');
+	}
+	else{
+		if (id == 2){
+			$('#image').attr('src','./chm3.jpg');
+		}
+	}
+	$(document).ready(function(){
+		$('#new_btn').click(function(){
+			if (daysInWeek == 2){
+				$('#new_btn2').css('transform','rotate(360deg)',).delay(300).queue(function () 
+			    { 
+			    	$('#new_btn').css('border','5px solid purple').delay(300).queue(function () 
+			    	{ 
+			    	$('#container').css('background-image','none');
+			     	$('#new_btn').toggleClass('hide');
+					$('#cont_box').toggleClass('vis');
+					});	
+			    });
+			}
+			else {
+				if (daysInWeek == 1){
+					$('#new_btn2').css('transform','rotate(240deg)');
 				}
 				daysInWeek++;
 			}

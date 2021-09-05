@@ -15,13 +15,20 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+
 body{
-	background-image: url("./6890.jpg");
+	background-image: url(./6890.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #container {
 	position: absolute;
-    height: auto;
+    height: 100vh;
     bottom: 0;
     top: 0;
     left: 0;
@@ -29,6 +36,9 @@ body{
     margin: 0;
     background-color: rgba(0,0,0,0.8);
     overflow:hidden;
+    background-image: url(./DNA.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #outer_box {
@@ -144,4 +154,40 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto 
+}
+
+#new_btn {
+    position: relative;
+    margin: auto;
+    top: 34.6vh;
+    height: 30vh;
+    width: 30vh;
+    background-color: black;
+    background-image: url(./6890.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: all;
+    background-origin: content-box;
+    border-radius: 150vh;
+    border: 5px solid #fff;  
+    transition: 300ms ease all;
+}
+
+#new_btn.hide
+{
+    opacity: 0;
+}
+
+#new_btn2 {
+    transition: 300ms ease all;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 150vh;
+    background-image: url(./DNA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: all;
+    background-origin: content-box;
+    transform: rotate(90deg);
 }
