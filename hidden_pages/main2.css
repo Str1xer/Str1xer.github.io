@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'GilroyHeavy';
+  src: url(../gilroy-heavy.ttf); 
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url(../gilroy-bold.ttf); 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+body{
+	background-image: url(./6890.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#container {
+	position: absolute;
+    height: 100vh;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.8);
+    overflow:hidden;
+    background-image: url(./DNA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#outer_box {
+	position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 60px;
+    border: 40px solid rgba(214,8,154,0.8);
+}
+
+#inner_box {
+	position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 40px;
+}
+
+#text_box{
+	position: relative;
+	height: 100%;
+  	margin-top: 100px;
+	color: #fff;
+	font-family: "GilroyHeavy";
+	font-size: 34px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#text_box span{
+	font-family: "GilroyBold";
+	color: rgba(214,8,154, 1);
+}
+
+.download-icon{
+	fill: #fff;
+	width: 72px;
+}
+
+#download {
+	position: relative;
+	top: 0px;
+	color: #fff;
+	font-family: "GilroyHeavy";
+	font-size: 34px;
+	text-decoration: none;
+}
+
+#image {
+	margin: auto;
+    margin-top: 250px;
+	margin-left: 50px;
+	width: 90%;
+}
+
+#outer_box {
+	position: relative;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 60px;	
+    align-content: center;
+}
+
+#button_box 
+{
+    position: fixed;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 40px;
+}
+
+#button_box.hide
+{
+    height: 0;
+    visibility: hidden;
+}
+
+#cont_box{
+    visibility: hidden;
+    height: 0;
+}
+
+#cont_box.vis{
+    visibility: visible;
+}
+
+#open {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; 
+    align-content: center;
+    background-color: red;
+}
+
+.Present {
+    margin-top: 500px;
+    width: 60%;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#new_btn {
+    position: relative;
+    margin: auto;
+    top: 34.6vh;
+    height: 30vh;
+    width: 30vh;
+    background-color: black;
+    background-image: url(./6890.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: all;
+    background-origin: content-box;
+    border-radius: 150vh;
+    border: 5px solid #fff;  
+    transition: 300ms ease all;
+}
+
+#new_btn.hide
+{
+    opacity: 0;
+}
+
+#new_btn2 {
+    transition: 300ms ease all;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 150vh;
+    background-image: url(./DNA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: all;
+    background-origin: content-box;
+    transform: rotate(90deg);
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body id="bd">
+</body>
+<script type="text/javascript">
+	Number.prototype.pad = function(size) {
+		var s = String(this);
+		while (s.length < (size || 2)) {s = "0" + s;}
+		return s;
+	}
+
+	const oneDay = 24*60*60*1000;
+
+	var today = new Date();
+
+	const diffDays = Math.floor(Math.abs(today / oneDay));
+	document.getElementById("bd").innerHTML = diffDays +  "-" +  Math.round((today - diffDays*oneDay)/1000);
+</script>
+</html>
